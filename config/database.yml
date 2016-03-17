@@ -47,8 +47,27 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+default: &default
+  adapter: mysql2
+
 production:
   <<: *default
   database: ticketee_production
-  username: ticketee
-  password: <%= ENV['TICKETEE_DATABASE_PASSWORD'] %>
+  host: localhost
+  username: root
+  password: "password"
+
+development:
+  <<: *default
+  database: ticketee_development
+  host: localhost
+  username: root
+  password: "password"
+
+test:
+  <<: *default
+  database: ticketee_test
+  host: localhost
+  username: root
+  password: "password"
+
