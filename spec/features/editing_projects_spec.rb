@@ -1,5 +1,4 @@
 require "rails_helper"
-FactoryGirl.find_definitions
 
 RSpec.feature "User can edit existing projects" do
   before do

@@ -1,5 +1,4 @@
 require "rails_helper"
-FactoryGirl.find_definitions
 
 RSpec.feature "Users can delete projects" do
   scenario "successfully" do
