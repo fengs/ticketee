@@ -25,35 +25,35 @@ ul.actions {
   text-align: right;
 }
 
-a.new {
+a.new, a.edit, a.delete {
   @extend .btn;
-  @extend .btn-success;
 
   &:before {
     font-family: "FontAwesome";
+    padding-right: 0.5em;
+  }
+}
+
+a.new {
+  @extend .btn-success;
+
+  &:before {
     @extend .fa-plus;
-    padding-right: 0.5em
   }
 }
 
 a.edit {
-  @extend .btn;
   @extend .btn-primary;
 
   &:before {
-    font-family: "FontAwesome";
     @extend .fa-pencil;
-    padding-right: 0.5em;
   }
 }
 
 a.delete {
-  @extend .btn;
   @extend .btn-danger;
 
   &:before {
-    font-family: "FontAwesome";
     @extend .fa-trash;
-    padding-right: 0.5em;
   }
 }
